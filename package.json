@@ -1,10 +1,11 @@
 {
   "name": "node-js",
   "version": "1.0.0",
-  "description": "",
+  "description": "Express and AWS DynamoDB Integration",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "fetch:user": "node fetchUser.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,6 +13,9 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.1158.0",
+    "@aws-sdk/lib-dynamodb": "^3.1158.0",
+    "dotenv": "^18.0.9",
     "express": "^5.3.0"
   }
 }
