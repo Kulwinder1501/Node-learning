@@ -2,9 +2,9 @@ const { DynamoDBClient } = require('@aws-sdk/client-dynamodb');
 const { DynamoDBDocumentClient } = require('@aws-sdk/lib-dynamodb');
 require('dotenv').config();
 
-// Region: Read from .env, environment, or default to ap-south-1
+// Region: Read from .env, environment, or default to ap-south-2
 const clientConfig = {
-  region: process.env.AWS_REGION || process.env.AWS_DEFAULT_REGION || 'ap-south-1',
+  region: process.env.AWS_REGION || process.env.AWS_DEFAULT_REGION || 'ap-southeast-2',
 };
 
 // Optional: for local development with LocalStack or DynamoDB Local
